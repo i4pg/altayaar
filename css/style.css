@@ -7,13 +7,20 @@ body {
   color: #333333;
 }
 
+.hero-body {
+    background-image: url(../assets/logo/logo.png);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+  }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
 }
 
-Navbar Styles
+/* Navbar Styles */
 .navbar {
   transition: background-color 0.3s;
   background-color: transparent;
