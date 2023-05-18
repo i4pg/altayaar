@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Cairo Play', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+Navbar Styles
+.navbar {
+  transition: background-color 0.3s;
+  background-color: transparent;
+}
+
+.navbar.is-transparent {
+  background-color: transparent !important;
+}
+
+.navbar.is-transparent .navbar-item {
+  color: #333333 !important;
+}
+
+.navbar.is-transparent .navbar-burger {
+  background-color: #333333;
+}
+
+/* Section Styles */
+.section {
+  padding: 40px 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-image img {
+  transition: transform 0.3s;
+}
+
+.card-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}

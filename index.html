@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo/logo.png">
+  <title>AlumPack Food Packaging LLC</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          AlumPack
+        </a>
+        <span class="navbar-burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#about">About Us</a>
+          <a class="navbar-item" href="#products">Our Products</a>
+          <a class="navbar-item" href="#promise">Our Promise</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button class="button is-responsive " id="contactButton" onclick="openModal('contact-modal')">
+              <span class="icon">
+                <i class="fa-solid fa-money-check"></i>
+              </span>
+              <span>Contact</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          AlumPack Food Packaging LLC
+        </h1>
+        <h2 class="subtitle">
+          Providing High-Quality Food Packaging Solutions
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h3 class="title is-4">About Us</h3>
+          <p>
+            AlumPack Food Packaging LLC is a leading provider of high-quality food packaging solutions in the UAE. We
+            specialize in manufacturing and supplying a wide range of aluminium containers, foils, and cling film that
+            are perfect for food packaging. Our products are made using only the highest quality materials, ensuring
+            that they are safe, durable, and hygienic.
+          </p>
+          <p>
+            At AlumPack, we believe that the packaging is an essential part of any food business. That's why we're
+            dedicated to providing our customers with innovative and reliable packaging solutions that meet their unique
+            needs. We take pride in our commitment to quality, service, and sustainability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products section -->
+  <section id="products" class="section">
+    <div class="container">
+      <h3 class="title is-4">Our Products</h3>
+      <div class="columns">
+        <!-- Aluminium Containers card -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/400x300" alt="Aluminium Containers"
+                  onclick="openModal('aluminium-modal')">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">Aluminium Containers</p>
+                </div>
+              </div>
+              <div class="content">
+                We offer a wide range of aluminium containers in various sizes and shapes. Our containers are perfect
+                for packing food items such as biryanis, curries, noodles, and more. They are oven-safe, freezer-safe,
+                and can be used for both hot and cold food items.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foil Rolls card -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/400x300" alt="Foil Rolls" onclick="openModal('foil-modal')">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">Foil Rolls</p>
+                </div>
+              </div>
+              <div class="content">
+                We supply high-quality aluminium foil rolls that are perfect for food wrapping and storing. Our foil
+                rolls are strong, durable, and can withstand high temperatures, making them perfect for use in ovens and
+                grills.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cling Film card -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://via.placeholder.com/400x300" alt="Cling Film" onclick="openModal('cling-modal')">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-5">Cling Film</p>
+                </div>
+              </div>
+              <div class="content">
+                Our cling film is perfect for wrapping food items such as sandwiches, fruits, and vegetables. It's easy
+                to use, and its strong cling ensures that the food stays fresh for longer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Modals -->
+  <div class="modal" id="aluminium-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-4by3">
+        <img src="https://via.placeholder.com/800x600" alt="Aluminium Containers">
+      </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('aluminium-modal')"></button>
+  </div>
+
+  <div class="modal" id="foil-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-4by3">
+        <img src="https://via.placeholder.com/800x600" alt="Foil Rolls">
+      </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('foil-modal')"></button>
+  </div>
+
+  <div class="modal" id="cling-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-4by3">
+        <img src="https://via.placeholder.com/800x600" alt="Cling Film">
+      </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('cling-modal')"></button>
+  </div>
+
+
+  <!-- Our Promise section -->
+  <section id="promise" class="section">
+    <div class="container">
+      <h3 class="title is-4">Our Promise</h3>
+      <p>
+        At AlumPack, we're committed to providing our customers with the best possible service. We understand that every
+        business has unique needs, and we work closely with our customers to provide customized packaging solutions that
+        meet their specific requirements. We're also committed to sustainability, and we strive to minimize our
+        environmental impact by using eco-friendly materials and practices wherever possible.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact and Inquiries Modal -->
+  <div class="modal" id="contact-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <h3 class="title is-4">Contact and Inquiries</h3>
+        <p>If you have any questions or inquiries, please feel free to contact us:</p>
+        <ul>
+          <li>Phone: <a href="tel:+971512552525">+971 5125 52525</a></li>
+          <li>Email: <a href="mailto:saja@idus.ae">saja@idus.ae</a></li>
+        </ul>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" onclick="closeModal('contact-modal')"></button>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; AlumPack Food Packaging LLC - Est. 2022 | Sajaa, Sharjah, UAE</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle navbar burger menu
+    document.addEventListener('DOMContentLoaded', function () {
+      var burger = document.querySelector('.navbar-burger');
+      var menu = document.querySelector('.navbar-menu');
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+
+    // Open modal
+    function openModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.classList.add('is-active');
+    }
+
+    // Close modal
+    function closeModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.classList.remove('is-active');
+    }
+  </script>
+</body>
+
+</html>
